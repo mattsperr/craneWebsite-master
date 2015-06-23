@@ -43,6 +43,17 @@ table {
 a img {
   border: none; }
 
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}  
+.profile-photo {
+    float: left;
+    margin: 0px 5% 80px 0px;
+}
+
 /* =Scss Variables
 -------------------------------------------------------------- */
 /* =Global
@@ -134,6 +145,12 @@ header {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
+    #name::after { 
+      content: "Sociologist";
+      font-size: 30px;
+      color: black;
+      font-weight: 100;}
+  
 
     header nav {
       display: inline-block;
@@ -160,6 +177,12 @@ header {
         height: 55px;
         line-height: 55px;
         font-size: 30px; }
+        #name::after { 
+          content: "Sociologist";
+          color: red;
+          font-size: 20px;
+          color: black;
+          font-weight: 400;}        
       header.smaller nav a {
         line-height: 5px; }
 
@@ -172,8 +195,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #000
-}
+  color: #000}
 
 /* =Extras
 -------------------------------------------------------------- */
@@ -193,31 +215,77 @@ footer {
     display: block;
     float: none;
     margin: 0 auto;
-    height: 100px;
-    line-height: 100px;
+    height: 40px;
+    line-height: 70px;
+    font-size: 20px;
     text-align: center; }
+        #name::after { 
+          content: "Sociologist";
+          font-size: 15px;
+          color: black;
+          font-weight: 100;}
   header nav {
     display: block;
     float: none;
     height: 100px;
+    line-height: 70px;
     text-align: center;
     margin: 0 auto; }
     header nav a {
       line-height: 50px;
       margin: 0 10px; }
   header.smaller {
-    height: 75px; }
+    height: 100px; }
     header.smaller h1#name {
-      height: 40px;
-      line-height: 40px;
-      font-size: 30px; }
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center; }
+        #name::after { 
+          content: "Sociologist";
+          font-size: 15px;
+          color: black;
+          font-weight: 100;}
+
+
     header.smaller nav {
-      height: 35px; }
+      display: block;
+      float: none;
+      height: 100px;
+      line-height: 70px;
+      text-align: center;
+      margin: 0 auto; }
+
       header.smaller nav a {
-        line-height: 35px; } }
+      line-height: 50px; 
+      margin: 0 10px} 
+    }
+          .profile-photo {
+        display: block;
+        max-width: 150px;
+        margin: 0 auto 30px;
+        border-radius: 100%;
+      }  
+      .profile-photo {
+        float: none;
+        margin: 0px 5% 80px 0px;
+
+}
 @media all and (max-width: 600px) {
   .container {
     width: 100%; }
+          .profile-photo {
+        display: block;
+        max-width: 150px;
+        margin: 0 auto 30px;
+        border-radius: 100%;
+      }  
+      .profile-photo {
+        float: none;
+        margin: 0px 5% 80px 0px;
 
  }
 } 
