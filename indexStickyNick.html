@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- title and meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="" />
+        <title>Cheryl Crane | Sociologist</title>
+            
+        <!-- css -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stickyNick.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+            
+        <!-- js -->
+        <script src="stickyNick.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                        shrinkOn = 1,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
+
+
+
+    <body>
+
+        <div id="wrapper">
+
+            <header>
+                <div class="container clearfix">
+                    <h1 id="name">
+                        Cheryl Crane
+                        
+                    </h1>
+                    <h2 id="sociologist">
+                        Sociologist
+                    </h2>   
+                    <nav>
+                        <a href="">Bio</a>
+                        <a href="">CV</a>
+                        <a href="">Contact</a>
+                    </nav>
+                </div>
+            </header><!-- /header -->
+
+            <div id="main">
+                <div id="content">
+                    <section>
+                        <!-- Add a new pic of cheryl -->
+                        <img src="img/Cheryl.JPG" alt="Photograph of Cheryl Crane" class="profile-photo"> 
+                    </section>
+                    <section>
+
+                        <div class="container">
+                            <h1>Research</h1>
+                            <p>Cheryl Crane is a third year doctoral student in the Department of Sociology. She researches 
+                            mothering, birth, and family; resistance, inequality 
+                            and intersectionality. She is currently collecting in
+                            depth interviews with mothers for her dissertation to 
+                            learn how women construct scripts about “good mothers,” and how this ideology translates into acts of 
+                            mothering</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="container">
+                            <h1>Teaching</h1>
+                            <p>Cheryl is a Graduate Teaching Assistant for the Department 
+                            of Sociology. Currently, she is teaching Diversity and Inequality. In addi-
+                            tion, she has taught Introduction to Sociology, Introduction to World 
+                            Geography, and Introduction to Human Geography. She is preparing to 
+                            teach Social Problems and Social Theory.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="container">
+                            <h1>Education</h1>
+                            <p>A.B.D. (Applied Sociology), University of Louisville Expected May 2016</p>
+                            <p>M.A. (Human Geography), University of Washington, Seattle</p>
+                            <p>B.A. (Human Geography), University of Washington, Seattle</p>
+                        </div>
+                    </section>
+                </div>
+            </div><!-- #main -->
+
+
+                    <footer>
+
+                        <div>
+
+                            
+                            <a href="http://facebook.com/mattsperr"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+                            <p>&copy; 2015 Cheryl Crane.</p>
+                        </div>
+
+                    </footer><!-- /footer -->
+
+
+
+        </div><!-- /#wrapper -->
+
+
+    </body>
+</html>
