@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- title and meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="" />
+        <title>Cheryl Crane | Sociologist</title>
+            
+        <!-- css -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stickyNick.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+            
+        <!-- js -->
+        <script src="stickyNick.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                        shrinkOn = 1,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
+
+
+
+    <body>
+
+        <div id="wrapper">
+
+            <header>
+                <div class="container clearfix">
+                    <h1 id="name">
+                        Cheryl Crane
+                    </h1>
+                    <nav>
+                      <a href="indexCheryl.html">Bio</a>
+                      <a href="CV.html" class="selected">CV</a>
+                      <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </header><!-- /header -->
+
+            <div id="main">
+                 
+                    <div id="content">
+                    
+                    <section>
+
+                        <div class="container">
+                            <img src="CherylWebsite.jpg" alt="Photograph of Cheryl Crane" class="profile-photo"> 
+                            <h1>Intro?</h1>
+                            <p>Inro text</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="container">
+                            <img src="PeaceSquare.jpg" alt="Japanese Peace Charachter " class="profile-photo">                            
+                            <h1>Next Section of Info</h1>
+                            <p>Section details.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="container">
+                            <img src="flowerEd (2).jpg" alt="flower" class="profile-photo">                            
+                            <h1>Another Section of Info - The stuff below is there only for space holding</h1>
+                            <p>A.B.D. (Applied Sociology), University of Louisville Expected May 2016</p>
+                            <p>M.A. (Human Geography), University of Washington, Seattle</p>
+                            <p>B.A. (Human Geography), University of Washington, Seattle</p>
+                        </div>
+                    </section>
+                </div>
+            </div><!-- #main -->
+
+
+                    <footer>
+
+                        <div>
+
+                            
+                            <a href="http://facebook.com/mattsperr"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+                            <p>&copy; 2015 Cheryl Crane.</p>
+                        </div>
+
+                    </footer><!-- /footer -->
+
+
+
+        </div><!-- /#wrapper -->
+
+
+    </body>
+</html>
